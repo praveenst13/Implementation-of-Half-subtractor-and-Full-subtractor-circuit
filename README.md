@@ -29,9 +29,36 @@ If the output is 1, then the led glows.
 ##Program:
 /*
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: praveen s
+RegisterNumber:212222240077
 */
+###HALF SUBTRACTOR:
+```
+module halfsub(a,b,diff,borrow);
+input a,b;
+output diff,borrow;
+wire x;
+xor(diff,a,b);
+not(x,a);
+and(borrow,x,b);
+endmodule
+```
+###FULL SUBTRACTOR:
+```
+module fullsub(a,b,c,diff,borrow);
+input a,b,c;
+output borrow,diff;
+wire an,q,r,s,t,cn,u;
+not(an,a);
+not(cn,c);
+xor(q,a,b);
+xor(diff,q,c);
+and(s,a,b);
+and(t,q,cn);
+or(borrow,s,t);
+endmodule 
+```
+
 Logic symbol & Truthtable
 RTL realization
 Output:
