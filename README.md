@@ -32,7 +32,7 @@ Program to design a half subtractor and full subtractor circuit and verify its t
 Developed by: praveen s
 RegisterNumber:212222240077
 */
-###HALF SUBTRACTOR:
+### HALF SUBTRACTOR:
 ```
 module halfsub(a,b,diff,borrow);
 input a,b;
@@ -43,7 +43,7 @@ not(x,a);
 and(borrow,x,b);
 endmodule
 ```
-###FULL SUBTRACTOR:
+### FULL SUBTRACTOR:
 ```
 module fullsub(a,b,c,diff,borrow);
 input a,b,c;
@@ -63,8 +63,14 @@ Logic symbol & Truthtable
 RTL realization
 Output:
 ## RTL
+### HALF SUBTRACTOR:
+![img](rtl.png)
 
 
 ## Timing Diagram
+### HALF SUBTRACTOR:
+![img](tim.png)
+
+
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
